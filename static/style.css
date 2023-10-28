@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #00ff87;
     text-align: center;
+
 }
 
 h1 {
-    background-color: #333;
-    color: white;
+    color:#38003d ;
 }
 
 table {
@@ -46,5 +46,34 @@ color:white;
 margin-left:20px;
 }
 .form1{
-   margin-top:15%;
+   margin-top:10%;
+}
+
+.ipt{
+  border-radius:5px;
+  border:0.5px #38003d ;
+  height:25px;
+
+}
+
+img{
+width:200px;}
+
+#text{
+  z-index: 99;
+  position:relative;
+  margin-top:-51px;
+  color:#38003d;
+  font-weight: bold;
+}
+#league{
+  z-index:99;
+  position:relative;
+  margin-top:-14px;
+}
+
+#update{
+  background:#38003d;
+  color:white;
+  border-radius:40px;
 }

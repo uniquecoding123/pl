@@ -6,13 +6,18 @@
 </head>
 <body>
     <h1>Leaderboard</h1>
-        <div class="form1">
+    <img src="{{ url_for('static', filename='ef3f96e0384a64e74278c6cd1f5889f2.png') }}" alt="My Image">
+   <div id="text">
+    <p id="pl">PREMIER LEAGUE</p>
+    <P id="league">FC Mobile</P>
+   </div>
+    <div class="form1">
     <form action="/add_player" method="post">
         <label >Name:</label>
-        <input type="text" placeholder="vini jr-Liv" name="name" required>
+        <input class="ipt" type="text" placeholder="vini jr-Liv" name="name" required>
         <label >Goals:</label>
-        <input type="number" name="goals" required>
-        <input type="submit" value="Update">
+        <input class="ipt" type="number" name="goals" required>
+        <input type="submit" id="update" value="Update">
     </form>
     <form action="/clear_database" method="get">
         <input id="clear" type="submit" value="Clear">
