@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///leaderboard.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgress_2fvz_user:mSk50LgEYY0L3cffmy7sZ9Fetc9aKsps@dpg-cl1qd7gp2gis73fjje50-a.oregon-postgres.render.com/postgress_2fvz'
+
 db = SQLAlchemy(app)
 
 class Player(db.Model):
@@ -37,12 +38,7 @@ def add_player():
 
     return redirect(url_for('index'))
 
-@app.route('/clear_database', methods=['GET'])
-def clear_database():
-    # Delete all records from the Player table
-    Player.query.delete()
-    db.session.commit()
-    return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)

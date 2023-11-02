@@ -19,8 +19,8 @@
         <input class="ipt" type="number" name="goals" required>
         <input type="submit" id="update" value="Update">
     </form>
-    <form action="/clear_database" method="get">
-        <input id="clear" type="submit" value="Clear">
+    <form action="/clear_database" method="post">
+        <input id="clear" type="password" placeholder="enter password to clear" name="clr">
     </form>
         </div>
     <table>
@@ -37,6 +37,5 @@
             </tr>
         {% endfor %}
     </table>
-
 </body>
 </html>
